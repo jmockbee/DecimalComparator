@@ -1,13 +1,13 @@
 public class DecimalComparator {
 
-public static boolean
-    public static boolean areEqualByThreeDecimalPlaces(double number1, double number2){
 
-        int num1 = (int)(number1 * 1000);
+    public static boolean areEqualByThreeDecimalPlaces(double num1, double num2) {
+//        boolean to integer below in parenthesis but why second set parenthesis
+         num1 = (int) (num1 * 1000);
 
-        int num2 = (int)(number2 * 1000);
+         num2 = (int) (num2 * 1000);
 
-        if (num1 == num2){
+        if (num1 == num2) {
 
             return true;
         }
@@ -16,5 +16,6 @@ public static boolean
             return false;
 
 
+    }
 
 }
